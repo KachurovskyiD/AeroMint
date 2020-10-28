@@ -1,0 +1,270 @@
+.first-letter-size {
+  font-size: 200px;
+  font-weight: 700;
+}
+
+.classes-1 {
+  margin-top: -100px;
+
+  .first-letter {
+    color: #f8757e;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__figure {
+    position: relative;
+    top: -90px;
+    left: -85px;
+  }
+
+  &__text {
+    max-width: 670px;
+
+    &-title {
+      position: relative;
+      top: -65px;
+      left: -360px;
+      z-index: -1;
+    }
+
+    &-timetable {
+
+      .text-timetable-list {
+        letter-spacing: 0.05em;
+        color: #828282;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 15px;
+
+        span {
+          color: #f8757e;
+        }
+      }
+    }
+
+    & a {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (min-width: 1040px) and (max-width: 1400px) {
+  .first-letter {
+    font-size: 150px;
+  }
+
+  .classes-1 {
+    margin-top: -170px;
+    margin-bottom: 85px;
+
+    &__figure {
+      position: relative;
+      top: -5px;
+      left: -25px;
+
+      & img {
+        max-width: 372px;
+        max-height: 604px;
+      }
+    }
+
+    &__text {
+      position: relative;
+      left: 30px;
+      max-width: 500px;
+
+      &-title {
+        position: relative;
+        top: -20px;
+        left: -258px;
+        z-index: -1;
+        font-size: 55px;
+        letter-spacing: 5px;
+      }
+
+      &-description {
+        font-size: 16px;
+      }
+
+      &-timetable {
+
+        .text-timetable-list {
+          letter-spacing: 0.05em;
+          color: #828282;
+          font-size: 18px;
+          font-weight: 400;
+          margin-bottom: 15px;
+
+          span {
+            color: #f8757e;
+          }
+        }
+      }
+
+      & a {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1040px) {
+  .first-letter {
+    font-size: 120px;
+  }
+
+  .classes-1 {
+    margin-top: -150px;
+
+    &__figure {
+      position: relative;
+      top: -5px;
+      left: -25px;
+
+      & img {
+        max-width: 372px;
+        max-height: 604px;
+      }
+    }
+
+    &__text {
+      left: 0px;
+      max-width: 400px;
+
+      &-title {
+        top: -40px;
+        left: -240px;
+        font-size: 48px;
+      }
+
+      &-description {
+        font-size: 16px;
+        margin-bottom: 30px;
+        line-height: 25px;
+      }
+
+      &-timetable {
+
+        .text-timetable-list {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+
+      & a {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .first-letter {
+    font-size: 100px;
+  }
+
+  .classes-1 {
+    margin-top: -110px;
+
+    &__figure {
+      top: -5px;
+      left: 50px;
+
+      & img {
+        max-width: 290px;
+        max-height: 470px;
+        opacity: 0.2;
+      }
+    }
+
+    &__text {
+      position: relative;
+      left: -75px;
+      min-width: 330px;
+
+      &-title {
+        top: -35px;
+        left: -100px;
+        font-size: 40px;
+        letter-spacing: 3px;
+        z-index: 1;
+      }
+
+      &-description {
+        font-size: 16px;
+        margin-bottom: 30px;
+        line-height: 25px;
+      }
+
+      &-timetable {
+
+        .text-timetable-list {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+
+      & a {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .first-letter {
+    font-size: 80px;
+  }
+
+  .classes-1 {
+    margin-top: 0px;
+
+    &__figure {
+      top: -5px;
+      left: 105px;
+
+      & img {
+        max-width: 208px;
+        max-height: 338px;
+        opacity: 0.2;
+      }
+    }
+
+    &__text {
+      position: relative;
+      left: -75px;
+      min-width: 330px;
+
+      &-title {
+        top: -35px;
+        left: -10px;
+        font-size: 30px;
+        letter-spacing: 3px;
+        z-index: 1;
+      }
+
+      &-description {
+        font-size: 14px;
+        margin-bottom: 30px;
+        line-height: 20px;
+      }
+
+      &-timetable {
+
+        .text-timetable-list {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+
+      & a {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+}

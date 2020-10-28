@@ -1,0 +1,23 @@
+.gallery {
+  margin-top: 120px;
+
+  .grid-sizer,
+  .grid-item {
+    width: 25%;
+  }
+
+  .grid-item {
+    float: left;
+  }
+
+  .grid-item img {
+    display: block;
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+    filter: grayscale(100%);
+
+    &:hover {
+      filter: none;
+    }
+  }
+}

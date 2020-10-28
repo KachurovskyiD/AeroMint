@@ -1,0 +1,504 @@
+.contacts {
+  margin-top: 150px;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__subtitle {
+    margin-bottom: 50px;
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-left: 150px;
+    display: inline-block;
+    min-width: 100%;
+
+    &::before {
+      content: '';
+      display: block;
+      background-color: rgb(24, 23, 23);
+      height: 1px;
+      width: 180px;
+      position: absolute;
+      top: 40px;
+      left: -50px;
+    }
+
+    span {
+      position: absolute;
+      display: inline-block;
+      top: -30px;
+      left: 180px;
+      color: #f3f3f3;
+      font-size: 3.33333em;
+      letter-spacing: 0.25em;
+      z-index: -1;
+    }
+  }
+
+  &__title {
+    position: relative;
+    left: 250px;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    background: linear-gradient(135deg, #fba964 0, #f8757e 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 50px;
+  }
+
+  &__group {
+    position: relative;
+    left: 405px;
+  }
+
+  &__form-wrap {
+    position: relative;
+    z-index: 10;
+    max-width: 835px;
+    background-color: #f3f3f3;
+    padding: 150px 100px;
+    box-shadow: 0 0 20px rgba(24, 23, 23, 0.164);
+  }
+
+  &__form-title {
+    font-weight: 700;
+    color: #181717;
+    text-transform: uppercase;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 3px;
+  }
+
+  &__form-subtitle {
+    color: #828282;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 20px 0 70px;
+  }
+
+  &__map {
+    margin-top: -20%;
+    background: linear-gradient(135deg, #fba964 0, #f8757e 70%);
+    padding: 1px 0;
+  }
+
+  .contacts-item a {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #828282;
+    text-decoration: none;
+
+    &:hover {
+      color: #f8757e;
+    }
+  }
+
+  .form-input {
+    background-color: transparent;
+    width: 680px;
+    border-bottom: 1px solid #D2D2D2;
+    padding: 10px 40px;
+    font-size: 18px;
+    color: rgb(130, 130, 130);
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+
+  .form-button {
+    position: relative;
+    background-color: rgb(248, 117, 126);
+    border: 1px solid rgb(248, 117, 126);
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+
+    &:hover {
+      color: rgb(248, 117, 126);
+      background-color: #fff;
+    }
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .contacts {
+    margin-top: 150px;
+
+    &__row {
+      justify-content: space-around;
+    }
+
+    &__title {
+      left: 200px;
+      font-size: 55px;
+      margin-bottom: 50px;
+      letter-spacing: 5px;
+    }
+
+    &__group {
+      left: 300px;
+    }
+
+    &__form-wrap {
+      max-width: 570px;
+      padding: 70px 40px;
+    }
+
+    &__form-title {
+      font-size: 50px;
+      line-height: 70px;
+      letter-spacing: 2px;
+    }
+
+    &__form-subtitle {
+      font-size: 16px;
+      margin: 20px 0 70px;
+    }
+
+    .contacts-item a {
+      margin-bottom: 25px;
+    }
+
+    .form-input {
+      width: 450px;
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+
+    .form-button {
+      font-size: 16px;
+      width: 200px;
+      height: 60px;
+    }
+  }
+}
+
+@media (min-width: 1060px) and (max-width: 1400px) {
+  .contacts {
+    margin-top: 100px;
+
+    &__row {
+      justify-content: space-around;
+    }
+
+    &__subtitle {
+      margin-bottom: 50px;
+      font-size: 20px;
+      letter-spacing: 3px;
+      margin-left: 20%;
+
+      &::before {
+        width: 150px;
+        top: 40px;
+        left: -50px;
+      }
+
+      span {
+        top: -30px;
+        left: 140px;
+        color: #f3f3f3;
+        font-size: 3.33333em;
+      }
+    }
+
+    &__title {
+      left: 70px;
+      font-size: 55px;
+      margin-bottom: 50px;
+      letter-spacing: 5px;
+    }
+
+    &__group {
+      left: 150px;
+    }
+
+    &__form-wrap {
+      max-width: 450px;
+      padding: 70px 40px;
+    }
+
+    &__form-title {
+      font-size: 40px;
+      line-height: 60px;
+      letter-spacing: 1px;
+    }
+
+    &__form-subtitle {
+      font-size: 14px;
+      margin: 20px 0 70px;
+    }
+
+    .contacts-item a {
+      margin-bottom: 25px;
+      font-size: 16px;
+    }
+
+    .form-input {
+      width: 380px;
+      font-size: 16px;
+      margin-bottom: 50px;
+    }
+
+    .form-button {
+      font-size: 16px;
+      width: 200px;
+      height: 60px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1060px) {
+  .contacts {
+    margin-top: 100px;
+
+    &__row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__subtitle {
+      margin-bottom: 50px;
+      font-size: 24px;
+      letter-spacing: 3px;
+      margin-left: 20%;
+
+      &::before {
+        width: 150px;
+        top: 40px;
+        left: -50px;
+      }
+
+      span {
+        top: -30px;
+        left: 140px;
+        color: #f3f3f3;
+        font-size: 3.33333em;
+      }
+    }
+
+    &__text {
+      position: relative;
+      left: -200px;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      left: 70px;
+      font-size: 55px;
+      margin-bottom: 50px;
+      letter-spacing: 5px;
+    }
+
+    &__group {
+      left: 150px;
+    }
+
+    &__form-wrap {
+      max-width: 450px;
+      padding: 70px 40px;
+    }
+
+    &__form-title {
+      font-size: 40px;
+      line-height: 60px;
+      letter-spacing: 1px;
+    }
+
+    &__form-subtitle {
+      font-size: 14px;
+      margin: 20px 0 70px;
+    }
+
+    .contacts-item a {
+      margin-bottom: 25px;
+      font-size: 16px;
+    }
+
+    .form-input {
+      width: 380px;
+      font-size: 16px;
+      margin-bottom: 50px;
+    }
+
+    .form-button {
+      font-size: 16px;
+      width: 200px;
+      height: 60px;
+    }
+  }
+}
+
+@media (min-width: 460px) and (max-width: 768px) {
+  .contacts {
+    margin-top: 100px;
+
+    &__row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__subtitle {
+      margin-bottom: 50px;
+      font-size: 22px;
+      letter-spacing: 2px;
+      margin-left: 20%;
+
+      &::before {
+        width: 150px;
+        top: 40px;
+        left: -50px;
+      }
+
+      span {
+        top: -30px;
+        left: 140px;
+        color: #f3f3f3;
+        font-size: 3.33333em;
+      }
+    }
+
+    &__text {
+      position: relative;
+      left: -100px;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      left: 70px;
+      font-size: 55px;
+      margin-bottom: 50px;
+      letter-spacing: 5px;
+    }
+
+    &__group {
+      left: 150px;
+    }
+
+    &__form-wrap {
+      max-width: 450px;
+      padding: 70px 40px;
+    }
+
+    &__form-title {
+      font-size: 40px;
+      line-height: 60px;
+      letter-spacing: 1px;
+    }
+
+    &__form-subtitle {
+      font-size: 14px;
+      margin: 20px 0 70px;
+    }
+
+    .contacts-item a {
+      margin-bottom: 25px;
+      font-size: 16px;
+    }
+
+    .form-input {
+      width: 360px;
+      font-size: 16px;
+      margin-bottom: 50px;
+    }
+
+    .form-button {
+      font-size: 16px;
+      width: 200px;
+      height: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .contacts {
+    margin-top: 50px;
+
+    &__row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__subtitle {
+      margin-bottom: 50px;
+      font-size: 22px;
+      letter-spacing: 2px;
+      margin-left: 30%;
+
+      &::before {
+        width: 100px;
+        top: 40px;
+        left: -20px;
+      }
+
+      span {
+        top: -30px;
+        left: 100px;
+        color: #f3f3f3;
+        font-size: 3.33333em;
+      }
+    }
+
+    &__text {
+      position: relative;
+      left: -80px;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      left: 70px;
+      font-size: 32px;
+      margin-bottom: 50px;
+      letter-spacing: 5px;
+    }
+
+    &__group {
+      left: 100px;
+    }
+
+    &__form-wrap {
+      max-width: 302px;
+      padding: 40px 15px;
+    }
+
+    &__form-title {
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: 1px;
+    }
+
+    &__form-subtitle {
+      font-size: 12px;
+      margin: 20px 0 70px;
+      line-height: 20px;
+    }
+
+    .contacts-item a {
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    .form-input {
+      width: 250px;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .form-button {
+      font-size: 14px;
+      width: 180px;
+      height: 60px;
+    }
+  }
+}

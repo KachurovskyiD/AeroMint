@@ -1,0 +1,412 @@
+.reviews {
+  margin-top: 250px;
+
+  &__row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 530px;
+      width: 100%;
+      background-color: #F3F3F3;
+      position: absolute;
+      top: -90px;
+      left: 620px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 5px;
+    left: 145px;
+    letter-spacing: 10px;
+  }
+
+  &__slider {
+    min-width: 0;
+    max-width: 1400px;
+    overflow: hidden;
+    margin-right: -50px;
+    z-index: 5;
+  }
+
+  &__slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+  }
+
+  &__text-persone {
+    align-self: flex-end;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 130px;
+      border: 1px solid #000;
+      position: relative;
+      top: 14px;
+      left: -150px;
+    }
+  }
+
+  &__text-name {
+    color: #f8757e;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  &__text-role {
+    color: #828282;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    font-size: 18px;
+  }
+
+  &__controls {
+    position: absolute;
+    display: flex;
+    bottom: -30px;
+  }
+
+  &__controls-arrows {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #828282;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #d7d7d7;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: all 0.1s ease-in-out;
+    z-index: 10;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &__controls-prev {
+    padding-right: 5px;
+  }
+
+  &__controls-next {
+    padding-left: 5px;
+  }
+
+  .quote-icon {
+    font-size: 87px;
+    color: #f3f3f3;
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    z-index: -1;
+  }
+
+  /* Лента слайдов */
+  .slick-track {
+    display: flex;
+    outline: none;
+  }
+
+  /* Слайд */
+  .slick-slide {
+
+    &:focus,
+    a {
+      outline: none;
+    }
+  }
+}
+
+@media (min-width: 1250px) and (max-width: 1550px) {
+  .reviews {
+    margin-top: 200px;
+    min-height: 500px;
+
+    &__title {
+      top: 5px;
+      left: 230px;
+      letter-spacing: 5px;
+      font-size: 55px;
+    }
+
+    &__slider {
+      max-width: 1000px;
+    }
+
+    &__slide {
+      justify-content: space-around;
+    }
+
+    &__text {
+      max-width: 470px;
+      padding-top: 100px;
+    }
+
+    &__text-persone {
+      align-self: flex-end;
+    }
+
+    &__photo {
+      max-width: 360px;
+      max-height: 370px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__controls {
+      position: absolute;
+      display: flex;
+      bottom: -100px;
+      left: 400px;
+    }
+
+    .quote-icon {
+      font-size: 87px;
+      color: #f3f3f3;
+      position: absolute;
+      top: 110px;
+      left: 10px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1250px) {
+  .reviews {
+    margin-top: 150px;
+    min-height: 500px;
+
+    &__title {
+      top: 5px;
+      left: 5%;
+      letter-spacing: 5px;
+      font-size: 55px;
+    }
+
+    &__slider {
+      max-width: 1000px;
+    }
+
+    &__slide {
+      justify-content: space-around;
+    }
+
+    &__text {
+      max-width: 470px;
+      padding-top: 100px;
+      padding-left: 50px;
+    }
+
+    &__text-persone {
+      align-self: flex-end;
+    }
+
+    &__photo {
+      max-width: 360px;
+      max-height: 370px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__controls {
+      position: absolute;
+      display: flex;
+      bottom: -100px;
+    }
+
+    .quote-icon {
+      font-size: 87px;
+      color: #f3f3f3;
+      position: absolute;
+      top: 110px;
+      left: 10px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 850px) {
+  .reviews {
+    margin-top: 70px;
+    min-height: 900px;
+
+    &__row {
+
+      &::before {
+        height: 400px;
+        top: 70px;
+        left: 405px;
+      }
+    }
+
+    &__title {
+      top: 5px;
+      left: 10%;
+      letter-spacing: 3px;
+      font-size: 40px;
+    }
+
+    &__slider {
+      max-width: 1000px;
+    }
+
+    &__slide {
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__text {
+      max-width: 470px;
+      padding-top: 100px;
+      padding-left: 50px;
+      margin-bottom: 20px;
+    }
+
+    &__text-persone {
+      align-self: flex-end;
+      margin-right: 50px;
+
+      &::before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 70px;
+        border: 1px solid #000;
+        position: relative;
+        top: 14px;
+        left: -90px;
+      }
+    }
+
+    &__photo {
+      max-width: 360px;
+      max-height: 370px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__controls {
+      bottom: -100px;
+    }
+
+    .quote-icon {
+      font-size: 87px;
+      color: #f3f3f3;
+      position: absolute;
+      top: 110px;
+      left: 5%;
+      z-index: -1;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .reviews {
+    margin-top: 70px;
+    min-height: 720px;
+
+    &__row {
+      &::before {
+        display: none;
+      }
+    }
+
+    &__title {
+      top: 5px;
+      left: 10%;
+      letter-spacing: 3px;
+      font-size: 32px;
+    }
+
+    &__slider {
+      max-width: 1000px;
+    }
+
+    &__slide {
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__text {
+      max-width: 300px;
+      padding-top: 70px;
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+
+    &__text-description {
+      font-size: 14px;
+      line-height: 25px;
+      margin-bottom: 30px;
+    }
+
+    &__text-persone {
+      align-self: flex-end;
+      margin-right: 50px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__text-name {
+      font-size: 20px;
+    }
+
+    &__text-role {
+      font-size: 16px;
+    }
+
+    &__photo {
+      max-width: 240px;
+      max-height: 250px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__controls {
+      bottom: -100px;
+    }
+
+    .quote-icon {
+      font-size: 87px;
+      color: #f3f3f3;
+      position: absolute;
+      top: 70px;
+      left: 5%;
+      z-index: -1;
+    }
+  }
+}
